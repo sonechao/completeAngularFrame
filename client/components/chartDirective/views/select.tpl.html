@@ -1,0 +1,8 @@
+<div>
+	<input type='text' placeholder="请输入要查询的内容" ng-model="search" />
+	<div class="list">
+		<ul>
+			<li ng-repeat="one in list"><a href="" ng-bind="one.date | date:'yyyy-MM-dd hh:mm:ss'"></a></li>
+		</ul>
+	</div>
+</div>

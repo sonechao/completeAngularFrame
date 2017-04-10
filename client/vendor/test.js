@@ -1,0 +1,1 @@
+console.log('这是vendor下面的test文件');

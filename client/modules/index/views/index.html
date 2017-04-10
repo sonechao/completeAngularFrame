@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+	<h1 ng-if='!noCommonPart'>这里是首页的内容区域，改变了</h1>
+	<div ui-view></div>
+	<!-- 插件引入 -->
+	<script type="text/javascript" src="/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="/vendor/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="/vendor/ng-rap.min.js"></script>
+	<script type="text/javascript" src="/vendor/angular-local-storage.js"></script>
+	<script type="text/javascript" src="/vendor/ui-bootstrap-angular/ui-bootstrap-tpls.js"></script>
+	<script type="text/javascript" src="/vendor/echarts.min.js"></script>
+
+	<!-- 组件引入 -->
+	<script type="text/javascript" src="/components/chartDirective.js"></script>
+
+	<!-- 模块引入 -->
+	<script type="text/javascript" src="/assets/js/index.js"></script>
+	<script type="text/javascript" src="/assets/js/account.js"></script>
+	<script type="text/javascript" src="/assets/js/cart.js"></script>
+	<script type="text/javascript" src="/assets/js/supermarket.js"></script>
+	<script type="text/javascript" src="/assets/js/direct_learn.js"></script>
+</body>
+</html>
