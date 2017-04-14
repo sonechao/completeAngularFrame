@@ -10,7 +10,7 @@
 
 			$rootScope.$on('$stateChangeSuccess',function(event,toState,toParams,fromState,fromParams){
 				$rootScope.noCommonPart = false;
-				var noCommonState = ['signIn','cart'];
+				var noCommonState = ['signIn','cart','Canvaspie'];
 				if(noCommonState.indexOf($state.current.name) !== -1){
 					$rootScope.noCommonPart = true;
 				}
@@ -49,6 +49,12 @@
 				url:'/directLearn',
 				templateUrl : '/modules/direct_learn/views/direct_learn.html',
 				controller:'directLearnCtrl',
+				controllerAs:'vm'
+			})
+			.state('Canvaspie',{
+				url:'/canvaspie',
+				templateUrl : '/modules/canvaspie/views/canvaspie.tpl.html',
+				controller:'canvaspieCtrl',
 				controllerAs:'vm'
 			});
 
