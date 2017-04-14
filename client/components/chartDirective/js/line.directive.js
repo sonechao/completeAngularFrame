@@ -14,7 +14,7 @@
 	            data: "=",
 	        }, 
 	        restrict: 'E',  
-	        template: '<div style="height:400px;">ssfsfsfsf</div>',  
+	        template: '<div style="height:400px;">ssssssssssssssss</div>',  
 	        replace: true,  
 	        link: function($scope, element, attrs, controller) {  
 	            var option = {  
