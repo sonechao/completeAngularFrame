@@ -10,6 +10,7 @@
 		'myApp.cart',
 		'myApp.supermarket',
 		'myApp.directLearn',
-		'myApp.chartDirective'
+		'myApp.chartDirective',
+		'myApp.canvaspie'
 		]);
 })();

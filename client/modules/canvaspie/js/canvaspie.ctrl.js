@@ -1,16 +1,12 @@
 ;(function(){
 	'use strict';
-	angular.module('myApp.supermarket')
-	.controller('supermarketCtrl',supermarketCtrl);
+	angular.module('myApp.canvaspie')
+	.controller('canvaspieCtrl',canvaspieCtrl);
 
-	supermarketCtrl.$inject = ['$scope','$state'];
-
-	function supermarketCtrl($scope,$state){
+	function canvaspieCtrl(){
+		'ngInject';
 		var vm = this;
-		console.log('$state:    ',$state);
-
-		vm.dataList = [];
-
+		console.log("here is canvaspie's ctrl!!!!!!!!!!!!");
 
 		vm.legend = ['预算'];  
 	    vm.item = ['销售', '管理', '信息技术', '客服', '研发', '市场'];  
